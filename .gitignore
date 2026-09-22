@@ -1,0 +1,60 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# cli build artifacts (esbuild 产物，M1.6 起定时器指向 dist/cli/*.mjs)
+/dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local
+/dev-server.log
+# 机器专用定时任务入口（写死本机绝对路径，不入库；建法见 docs/operations.md）
+/scripts/daily-task.bat
+/.vscode/
+/.claude/
+
+# —— 本地数据与用户配置（运行期生成 + 本地密钥，绝不入库；只保留示例模板）——
+# data/ 全部为脚本生成的内容与本地用户配置（含 AI API Key / GitHub Token），一律不入库
+/data/*
+!/data/config/
+/data/config/*
+!/data/config/ai-config.json.example
+!/data/config/safety-keywords.json.example
+!/data/config/tracked-repos.json.example

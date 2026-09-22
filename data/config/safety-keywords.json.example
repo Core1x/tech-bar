@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "_说明": "内容安全关键词表（复制本文件为 safety-keywords.json 生效）。命中仓库名/描述/话题任一关键词即过滤该仓库。keywords 会与内置默认词表（无歧义色情/NSFW 标记，见 lib/safety.ts DEFAULT_KEYWORDS）合并；enabled=false 整体关闭关键词层。误伤正常项目（学术/统计/内容安全检测类）是主要风险，建议只放精确、无歧义的词；「涉政敏感/虚假夸大宣传」这类判断型内容由 /find 的 AI 兜底判定负责，可在 keywords 里补充你所在语境的具体违禁词。",
+  "keywords": [
+    "在此追加你的过滤词，一个一行（中英文均可，子串匹配）"
+  ]
+}

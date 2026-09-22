@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://api.deepseek.com",
+  "model": "deepseek-chat",
+  "apiKey": "sk-在此填写你的 API Key",
+  "githubToken": "在此填写 GitHub Personal Access Token（可选）"
+}
